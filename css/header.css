@@ -1,0 +1,111 @@
+/* HEADER STYLES GENERAL */
+header{
+    width: 100%;
+    background-color: var(--bghead-color);
+  
+}
+
+/* USING FLEX ON THE CONTENT */
+header .container-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* LOGO MARGIN RESET FOR CENTER MORE*/
+
+header .logo{
+    margin: 0;
+}
+
+/* HEADER LINKS STYLES GENERAL */
+header a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/*---- LIST STYLE NONE ON NAV HEADER  AND DISPLAY FLEX ON THE NAV SIDE BY SIDE-----*/
+
+header .nav-bar ul{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin-right: 5rem;
+}
+
+
+/* --FONT STYLES NAV---*/
+header .nav-bar li{
+    padding:  2.5rem 2.1rem;
+}
+
+/* Link styles */
+header .nav-bar a{
+    margin-right: 2rem;
+    color: var(--navfont-color);
+    font-weight: 600;
+}
+
+/* HOVER EFFECT ON LINK STYLES */
+header .nav-bar a:hover{
+    transition: 0.2s all;
+    color: white;
+}
+
+header .nav-bar a:focus{
+    transition: 0.2s all;
+    color: white;
+}
+
+/* --COLOR USER AND SEARCH---*/
+header .login-container .login-search{
+    color: white;
+    padding: 0 1rem;
+}
+/* ALIGN TEXT GUY */
+.login-container{
+    text-align: right;
+}
+
+
+/* MEDIA QUERIES */
+
+/* FOR 768PX */
+
+@media screen and (max-width:768px)
+{   
+    /* FLEX WRAP AND CENTER ITEMS */
+    header .container-center{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    /* WIDTH OF 100% FOR USING FLEX-WRAP */
+    .nav-bar{
+        width: 100%;
+    }
+
+    /* MARGIN RIGHT 0 FOR CENTER THE LIST AND USING COLUMN WITH ALIGN ITEMS FOR CENTER, margin bottom for a bit space with the login/search user */
+    header .nav-bar ul{
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* JUST USING PADDING TOP AND BOTTOM */
+    header .nav-bar li{
+       padding: 1.5rem 0;
+       text-align: center;
+    }
+    /* NOT USING MARGIN RIGHT */
+    header .nav-bar a
+    {
+         margin-right: 0;
+    }
+
+}

@@ -1,0 +1,206 @@
+/* MARGIN OR PADDING A BIT FOR SPACING ON NAVBAR */
+main .container-center{
+    margin-top: 2.5rem;
+}
+
+/* SECTION IMG HERO HEIGHT AND WIDTH ON 400% FOR SLIDER CARRUSEL AUTO WITH CSS */
+
+.hero-slider{
+    width: 100%;
+    height: 75vh;
+    /* border: 1px solid black; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;    
+}
+
+/* UL ON 400% FOR OVERFLOW HIDDEN ON IMGS */
+.hero-slider ul{
+    width:400%;
+    height: 100%;
+    display: flex;
+    position: relative; /*POSITION RELATIVE FOR BUTTON ALWAYS AND DON'T COPY PASTE THE BUTTON*/
+    animation-name: slideshow-anime;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+
+/* ANIMATE CARRUSEL WITH CSS */
+@keyframes slideshow-anime
+{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/* HERO-SLIDER IMG CONTAINER */
+.hero-slider li{
+    list-style: none;
+    width: 100%;
+    position: relative; /*RELATIVE FOR USE ABSOLUT ON INFO HERO*/
+}
+/* IMG ADJUST TO 100% */
+.hero-slider li img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+/* USING BEFORE FOR EFFECT TRANSPARENT ON BACKGROUND, FOR A BIT SHADOW FOR THE TITLES AND INFO-HERO */
+.hero-slider li::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to top right, rgba(0,0,0,0.4) 1% , transparent) ;
+    position: absolute;  
+}
+
+/* HOVER EFFECT FOR USER WHEN HOVER ON THE IMAGE */
+.hero-slider li:hover::before{
+    background-image:linear-gradient( to top right, rgba(0,0,0,0.2) 1% , transparent) ; 
+}
+
+/* INFO HERO WITH A SIZE 50% OF THE SPACE */
+/* TOO INFO HERO ON ABSOLUTE FOR ADJUST IMG */
+.info-hero{
+    max-width: 50%;
+    position: absolute; /*ABSOLUTE FOR ADJUST THE POSITION OF DESCRIPTION OF C/O OF IMAGES*/
+    bottom: 8rem;
+    left: 3rem;
+    color: white;
+}
+
+/* button styles */
+
+.button-hero{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    position: absolute; /*ABSOLUTE FOR ALWAYS HAVE THE BUTTON, RELATIVE ON UL*/
+    bottom: 4rem;
+    left: 3rem;
+  
+}
+
+/* FONT SIZES AND STYLES OF INFO-HERO */
+
+/* ADVENTURE/CATEGORIE */
+.categorie-hero{
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    color: var(--hero-btn);
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+/* title */
+.title-hero{
+    font-size: 6rem;
+    line-height: 130%;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    font-weight: 700; 
+}
+
+/* description after title */
+.description-hero{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* TEXT SHADOWS GENERALS */
+.title-hero, 
+.description-hero{ text-shadow: 0.2rem 0.2rem 0.5rem black;}
+
+/* watch now styles */
+
+.watch-now {
+    padding: 1.5rem 3rem;
+    display:inline-block; 
+    background-color: var(--hero-btn);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;      
+}
+
+/* ARROW ON THE RIGHT SIDE OF BUTTON */
+.button-hero i{
+    display: inline-block;
+    background-color: var(--hero-btn);
+    margin-left: 0.2rem;
+    padding: 1.6rem 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; 
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px)
+{       
+    .button-hero{
+        font-size: 1.3rem;
+    }
+
+    .hero-slider{
+        width: 95%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+
+        /* INFO HERO NOW HAVE A WIDTH OF 100% */
+    .info-hero{
+      max-width: 100%;
+    }
+}
+
+
+/* SCREEN FOR 524PX */
+
+@media screen and (max-width:524px)
+
+{
+    .hero-slider{
+        height: 40vh;
+    }
+
+   /* FOR CHANGE FONTS OF TITTLES AND SUBTITTLES- PARAGRAPHS ETC */
+    .large-fonts{
+        font-size: 3.5rem;
+    }
+
+    .description-hero{
+        font-size: 1.6rem;
+    }
+}
+
+/* FONT SIZES FOR 370PX */
+@media screen and (max-width:370px)
+{   
+    .button-hero{
+        font-size: 1.1rem;
+    }
+
+    .categorie-hero{font-size: 1.3rem;}
+
+    .large-fonts{
+        font-size: 3rem;
+    }
+
+    .description-hero{
+        font-size: 1.5rem;
+    }
+
+}

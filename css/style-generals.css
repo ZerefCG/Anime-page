@@ -1,0 +1,61 @@
+/* FOR USING REM TRICK 1rem=10px */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--bgpage-color);
+}
+
+/* BOX SIZING */
+*{  
+    box-sizing: border-box;
+}
+
+/* VARS ON COLOR */
+:root{
+
+    /* NAV BAR COLORS */
+    --bghead-color:#070720;
+    --navfont-color:#b7b7b7;
+
+    /* hero-img button colors */
+    --hero-btn:#e53637;
+
+    /* PAGE COLORS */
+    --bgpage-color:#0b0c2a;
+
+}
+
+/* FONTS FOR TITTLES */
+.large-fonts{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* FONT FOR SUB-TITLE, PARAGRAPHS, ETC */
+.small-font{
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* CONTAINER MAX WIDTH AND CENTER WITH MARGIN AUTO */
+
+.container-center{
+    max-width: 115rem;
+    margin: 0 auto;
+}
+
+/* UL LIST STYLES NONE */
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
