@@ -63,7 +63,7 @@ main .container-center{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient( to top right, rgba(0,0,0,0.4) 1% , transparent) ;
+    background-image: linear-gradient( to top right, rgba(0,0,0,0.6) 1% , transparent) ;
     position: absolute;  
 }
 
@@ -148,14 +148,15 @@ main .container-center{
 
 /* MEDIA QUERIES */
 
+/* FOR 768PX */
 @media screen and (max-width:768px)
-{       
+{    
+       /*  LESS FONT SIZE FOR TABLETS AND MOBILE */
     .button-hero{
         font-size: 1.3rem;
     }
 
     .hero-slider{
-        width: 95%;
         height: 70vh;
         margin: 0 auto;
     }
