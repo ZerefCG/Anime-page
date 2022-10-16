@@ -27,7 +27,7 @@ header a{
 
 /*---- LIST STYLE NONE ON NAV HEADER  AND DISPLAY FLEX ON THE NAV SIDE BY SIDE-----*/
 
-header .nav-bar ul{
+ .nav-bar {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -38,24 +38,24 @@ header .nav-bar ul{
 
 
 /* --FONT STYLES NAV---*/
-header .nav-bar li{
+ .nav-bar li{
     padding:  2.5rem 2.1rem;
 }
 
 /* Link styles */
-header .nav-bar a{
+.nav-bar a{
     margin-right: 2rem;
     color: var(--navfont-color);
     font-weight: 600;
 }
 
 /* HOVER EFFECT ON LINK STYLES */
-header .nav-bar a:hover{
+ .nav-bar a:hover{
     transition: 0.2s all;
     color: white;
 }
 
-header .nav-bar a:focus{
+.nav-bar a:focus{
     transition: 0.2s all;
     color: white;
 }
@@ -73,7 +73,7 @@ header .login-container .login-search{
 
 /* MEDIA QUERIES */
 
-/* FOR 768PX */
+/* FOR 800PX */
 
 @media screen and (max-width:800px)
 {   
@@ -83,13 +83,10 @@ header .login-container .login-search{
         justify-content: center;
         padding-top: 1rem;
     }
-    /* WIDTH OF 100% FOR USING FLEX-WRAP */
-    .nav-bar{
-        width: 100%;
-    }
-
+   
     /* MARGIN RIGHT 0 FOR CENTER THE LIST AND USING COLUMN WITH ALIGN ITEMS FOR CENTER, margin bottom for a bit space with the login/search user */
-    header .nav-bar ul{
+     .nav-bar {
+        width: 100%; /* WIDTH OF 100% FOR USING FLEX-WRAP */
         margin-right: 0;
         flex-direction: column;
         align-items: center;
@@ -98,12 +95,12 @@ header .login-container .login-search{
     }
 
     /* JUST USING PADDING TOP AND BOTTOM */
-    header .nav-bar li{
+     .nav-bar li{
        padding: 1.5rem 0;
        text-align: center;
     }
     /* NOT USING MARGIN RIGHT */
-    header .nav-bar a
+     .nav-bar a
     {
          margin-right: 0;
     }
