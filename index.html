@@ -12,10 +12,18 @@
 
   <!-- NOW STYLES -->
     <link rel="stylesheet" href="./css/normalize.css">
+    <!-- NORMALIZE -->
     <link rel="stylesheet" href="./css/style-generals.css">
+    <!-- GENERAL STYLES FOR PAGE, FONTS, ETC -->
     <link rel="stylesheet" href="./css/header.css">
+    <!-- CSS STYLES ON HEADER -->
     <link rel="stylesheet" href="./css/hero-section.css">
+    <!-- HERO SECTION CSSS -->
     <link rel="stylesheet" href="./css/trending-now.css">
+    <!-- SECTION STYLES TRENDING NOW, USING ON 3 SECTIONS, POPULAR SHOWS AND ADDED RECENTLY -->
+    <!-- ASIDE BAR STYLES -->
+    <link rel="stylesheet" href="./css/aside-bar.css">
+    <link rel="stylesheet" href="./css/aside-bar_newcomments.css">
 
 </head>
 
@@ -153,10 +161,11 @@
          </a>
           
       </section>
-
+  </div>
       <!--  START SECTION OF PRODUCTS - TRENDING NOW -->
-     
-   <section class="products-page"> <!---DIV FOR PADDING or MARGIN AND SPACE THE PRODUCTS OF  HERO-->
+  <div class="container-center products-flex"><!--CONTAINER FOR CENTER
+       AND "PRODUCTS FOR FLEX"-->
+       <section class="products-page"> <!---DIV FOR PADDING or MARGIN AND  SPACE      THE  PRODUCTS OF  HERO-->
        <!-- TRENDING NOW SECTION -->
         <section class="trending-now">
             <div class="title-view"> <!--TITLE CONTAINER FOR FLEX LATER-->
@@ -316,7 +325,7 @@
         <!-- END TRENDING NOW SECTION -->
 
         <!-- POPULAR SHOWS SECTION, THIS SECTION INHERIT THE SAME CODE OF THE FIRST SECTION, JUST CHANGE THE TITLE OF SECTION "TRENDING NOW" TO "POPULAR SHOWS" -->
-        <section class="trending-now">
+        <section class="trending-now popular-shows">
           <div class="title-view"> <!--TITLE CONTAINER FOR FLEX LATER-->
       
             <h3 class="large-fonts">POPULAR SHOWS</h3><!--TITLE CHANGED-->
@@ -471,10 +480,10 @@
            
           </section>
        </section>
-      <!-- END POPULAR SHOW SECTION -->
+       <!-- END POPULAR SHOW SECTION -->
 
-      <!-- SAME WITH POPULAR SHOWS SECTION, USING THIS CODE FOR RECENTLY ADDED SHOWS -->
-       <section class="trending-now">
+       <!-- SAME WITH POPULAR SHOWS SECTION, USING THIS CODE FOR RECENTLY ADDED SHOWS -->
+        <section class="trending-now recently-added">
         <div class="title-view"> <!--TITLE CONTAINER FOR FLEX LATER-->
     
           <h3 class="large-fonts">RECENTLY ADDED SHOWS</h3><!--TITLE CHANGED-->
@@ -627,12 +636,264 @@
             </article>
         </section>
    
-       </section>
-   </section><!-- CONTAINER END OF PRODUCT-PAGE CLASS -->
-   
-     
-   </div><!-- CONTAINER FOR CENTER END HERE-->
+        </section>
+     </section><!-- CONTAINER END OF PRODUCT-PAGE CLASS -->
 
+
+     <!--------- ASIDE START HERE-------->
+       <aside class="aside-bar">
+ 
+       <!--USING FLEX FOR TITLE AND DATE, DAY, WEEK, MONTH ETC-->
+        <section class="description-aside title-view"><!--USING SAME CLASS FOR STYLES OF TITLE TRENDING NOW-->
+
+          <h5 class="large-fonts">TOP VIEWS</h4> <!--USING AGAIN SAME STYLES OF TRENDING NOW TITLE-->
+
+          <ul class="datetime-aside small-font"> <!--DATE TIME OF ASIDE ANIMES-->
+            <li><a href="#">Day</a></li>
+            <li><a href="#">Week</a></li>
+            <li><a href="#">Month</a></li>
+            <li><a href="#">Years</a></li>
+          </ul>
+        </section>
+        <!-- END TITLE AND DATE -->
+
+        <!--SECTION ASIDE CARDS-->
+        <section class="cards-aside"> 
+
+          <!-- CARD ASIDE 1 -->
+          <article class="card">
+            <!--USING CARDS OF TRENDING NOW, DELETING COMMENTS SPAN/DESCRIPTION-CARD  AND SET CARD-TITLE ON CARD-IMG CONTAINER-->
+
+            <figure class="card-img"> <!--IMG CARD CONTAINER-->
+              <img src="./img/hero-images-carrusel/BLACKCLOVER2.jpg" alt="">
+             <!-- COMMENTS, VIEWS AND EPISODES IN CARD -->
+              <span class="count episodes">18 / ?</span> <!--EPISODES-->
+              
+              <span class="count views comment-view-color"><!--VIEWS-->
+                <i class="fas fa-eye"></i>9141
+              </span>
+
+              <!-- TITTLE NOW HERE FOR ABSOLUTE ON IMG -->
+              <h3 class="small-font card-title">
+                <a href="#">Black Clover</a>
+              </h3>
+            </figure>
+        <!-- END CONTAINER IMG CARD -->
+          </article>
+
+           <!-- CARD ASIDE 2 -->
+           <article class="card">
+            <!--USING CARDS OF TRENDING NOW, DELETING COMMENTS SPAN/DESCRIPTION-CARD  AND SET CARD-TITLE ON CARD-IMG CONTAINER-->
+
+            <figure class="card-img"> <!--IMG CARD CONTAINER-->
+              <img src="./img/trending/chainsaw.jpg" alt="">
+             <!-- COMMENTS, VIEWS AND EPISODES IN CARD -->
+              <span class="count episodes">18 / ?</span> <!--EPISODES-->
+              
+              <span class="count views comment-view-color"><!--VIEWS-->
+                <i class="fas fa-eye"></i>9141
+              </span>
+
+              <!-- TITTLE NOW HERE FOR ABSOLUTE ON IMG -->
+              <h3 class="small-font card-title">
+                <a href="#">Chainsaw Man</a>
+              </h3>
+            </figure>
+        <!-- END CONTAINER IMG CARD -->
+          </article>
+
+           <!-- CARD ASIDE 3 -->
+           <article class="card">
+            <!--USING CARDS OF TRENDING NOW, DELETING COMMENTS SPAN/DESCRIPTION-CARD  AND SET CARD-TITLE ON CARD-IMG CONTAINER-->
+
+            <figure class="card-img"> <!--IMG CARD CONTAINER-->
+              <img src="./img/trending/bleach-sennen-kessen-hen.jpg" alt="">
+             <!-- COMMENTS, VIEWS AND EPISODES IN CARD -->
+              <span class="count episodes">18 / ?</span> <!--EPISODES-->
+              
+              <span class="count views comment-view-color"><!--VIEWS-->
+                <i class="fas fa-eye"></i>9141
+              </span>
+
+              <!-- TITTLE NOW HERE FOR ABSOLUTE ON IMG -->
+              <h3 class="small-font card-title">
+                <a href="#">Bleach: Sennen Kessen-hen</a>
+              </h3>
+            </figure>
+        <!-- END CONTAINER IMG CARD -->
+          </article>
+
+           <!-- CARD ASIDE 4 -->
+           <article class="card">
+            <!--USING CARDS OF TRENDING NOW, DELETING COMMENTS SPAN/DESCRIPTION-CARD  AND SET CARD-TITLE ON CARD-IMG CONTAINER-->
+
+            <figure class="card-img"> <!--IMG CARD CONTAINER-->
+              <img src="./img/hero-images-carrusel/shigatsu.jpg" alt="">
+             <!-- COMMENTS, VIEWS AND EPISODES IN CARD -->
+              <span class="count episodes">18 / ?</span> <!--EPISODES-->
+              
+              <span class="count views comment-view-color"><!--VIEWS-->
+                <i class="fas fa-eye"></i>9141
+              </span>
+
+              <!-- TITTLE NOW HERE FOR ABSOLUTE ON IMG -->
+              <h3 class="small-font card-title">
+                <a href="#">Shigatsu wa Kimi no Uso</a>
+              </h3>
+            </figure>
+        <!-- END CONTAINER IMG CARD -->
+          </article>
+
+           <!-- CARD ASIDE 5 -->
+           <article class="card">
+            <!--USING CARDS OF TRENDING NOW, DELETING COMMENTS SPAN/DESCRIPTION-CARD  AND SET CARD-TITLE ON CARD-IMG CONTAINER-->
+
+            <figure class="card-img"> <!--IMG CARD CONTAINER-->
+              <img src="./img/hero-images-carrusel/DANMACHI.jpg" alt="">
+             <!-- COMMENTS, VIEWS AND EPISODES IN CARD -->
+              <span class="count episodes">18 / ?</span> <!--EPISODES-->
+              
+              <span class="count views comment-view-color"><!--VIEWS-->
+                <i class="fas fa-eye"></i>9141
+              </span>
+
+              <!-- TITTLE NOW HERE FOR ABSOLUTE ON IMG -->
+              <h3 class="small-font card-title">
+                <a href="#">Danmachi Season 4</a>
+              </h3>
+            </figure>
+        <!-- END CONTAINER IMG CARD -->
+          </article>
+
+        </section>
+       <!--END SECTION ASIDE CARDS-->
+
+       <!-- NEW COMMENT SECTION ON ASIDE -->
+        <section class="new-comments">
+          <section class="title-view"> <!--TITLE CONTAINER FOR FLEX LATER-->
+            <h3 class="large-fonts">NEW COMMENT</h3><!--USING AGAIN FOR NEW TITLE-->
+            </section>
+
+            <!-- CARDS OF THIS NEW-COMMENT SECTION -->
+            <section class="new-comments-cards"> <!-- CONTAINER FOR FLEX -->
+              
+              <!-- CARD OF NEW-COMMENT SECTION -->
+              
+              <!-- CARD 1 -->
+                <article class="card">
+                  <!-- IMG OF CARD -->
+                <figure class="card-img">
+                  <img src="./img/popular/danmachis3.jpg">
+                </figure>
+  
+                <!-- DESCRIPTION RIGHT SIDE CARD -->
+                <section class="description-card-comment">
+  
+                  <section class="types-anime small-font">
+                    <span class="anime-type">Active</span>
+                    <span class="anime-type">Movie</span>
+                  </section>
+  
+                  <h3 class="small-font card-title">Danmachi Season 3</h3>
+  
+                  <section class="section-views">
+                    <span class="count views comment-view-color"><!--VIEWS-->
+                      <i class="fas fa-eye"></i>21.141 Viewes
+                    </span>
+                  </section>
+                  
+                </article>
+  
+                   <!-- CARD 2 -->
+                   <article class="card">
+                    <!-- IMG OF CARD -->
+                  <figure class="card-img">
+                    <img src="./img/trending/Komi-san-wa-Komyushou-Desu-Temp-2-visual-1-1200x1703.jpg">
+                  </figure>
+    
+                  <!-- DESCRIPTION RIGHT SIDE CARD -->
+                  <section class="description-card-comment">
+    
+                    <section class="types-anime small-font">
+                      <span class="anime-type">Active</span>
+                      <span class="anime-type">Movie</span>
+                    </section>
+    
+                    <h3 class="small-font card-title">
+                      Komi-san wa, Komyushō Desu
+                    </h3>
+    
+                    <section class="section-views">
+                      <span class="count views comment-view-color"><!--VIEWS-->
+                        <i class="fas fa-eye"></i>21.141 Viewes
+                      </span>
+                    </section>
+                    
+                  </article>
+              
+                    <!-- CARD 3 -->
+                    <article class="card">
+                      <!-- IMG OF CARD -->
+                    <figure class="card-img">
+                      <img src="./img/trending/shigatsu.jpg">
+                    </figure>
+      
+                    <!-- DESCRIPTION RIGHT SIDE CARD -->
+                    <section class="description-card-comment">
+      
+                      <section class="types-anime small-font">
+                        <span class="anime-type">Active</span>
+                        <span class="anime-type">Movie</span>
+                      </section>
+      
+                      <h3 class="small-font card-title">
+                        Shigatsu wa Kimi no Uso</h3>
+      
+                      <section class="section-views">
+                        <span class="count views comment-view-color"><!--VIEWS-->
+                          <i class="fas fa-eye"></i>21.141 Viewes
+                        </span>
+                      </section>
+                      
+                    </article>
+
+                      <!-- CARD 4 -->
+                   <article class="card">
+                    <!-- IMG OF CARD -->
+                  <figure class="card-img">
+                    <img src="./img/popular/noragami.jpg">
+                  </figure>
+    
+                  <!-- DESCRIPTION RIGHT SIDE CARD -->
+                  <section class="description-card-comment">
+    
+                    <section class="types-anime small-font">
+                      <span class="anime-type">Active</span>
+                      <span class="anime-type">Movie</span>
+                    </section>
+    
+                    <h3 class="small-font card-title">Noragami Aragoto</h3>
+    
+                    <section class="section-views">
+                      <span class="count views comment-view-color"><!--VIEWS-->
+                        <i class="fas fa-eye"></i>21.141 Viewes
+                      </span>
+                    </section>
+                    
+                  </article>
+
+            </section>
+
+        </section>
+
+       </aside>
+
+       
+      <!--------- -END ASIDE BAR-------->
+   
+ </div><!-- CONTAINER FOR CENTER END HERE-->
+
+  
 </main>
 
 </body>

@@ -27,7 +27,12 @@ body{
     --bgpage-color:#0b0c2a;
     --color-item-card:#3d3d3d;
     --description-card-anime-type:#3c3d55;
+    --aside-datetime-colors:#b7b7b7;
+}   
 
+/* LINK STYLES */
+a{
+    text-decoration: none;
 }
 
 /* FONTS FOR TITTLES */
@@ -63,9 +68,9 @@ li{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:880px)
+@media screen and (max-width:924px)
 {
     .container-center{
-        width: 95%;
+        width: 98%;
     }
 }

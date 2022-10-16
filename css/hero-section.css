@@ -149,7 +149,7 @@ main .container-center{
 /* MEDIA QUERIES */
 
 /* FOR 768PX */
-@media screen and (max-width:768px)
+@media screen and (max-width:924px)
 {    
        /*  LESS FONT SIZE FOR TABLETS AND MOBILE */
     .button-hero{
@@ -170,7 +170,7 @@ main .container-center{
 
 /* SCREEN FOR 524PX */
 
-@media screen and (max-width:524px)
+@media screen and (max-width:640px)
 
 {
     .hero-slider{

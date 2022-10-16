@@ -1,0 +1,128 @@
+/* ASIDE BAR ON WIDTH 30%, REMEMBER PRODUCTS PAGE ON WIDTH 70% FOR SPACE ASIDE ON 30%  */
+.aside-bar{
+    width: 32%;
+    padding: 1rem;
+}
+
+/* FLEX WRAP ON TITLE AND DATETIME */
+.description-aside{
+        flex-wrap: wrap;
+        line-height: 2rem;
+}
+
+/* FLEXBOX ON DATETIME-ASIDEBAR LINKS */
+
+.datetime-aside{
+    display: flex;
+    font-size: 1.3rem;
+}
+
+/* SPACING ON LI CONTAINER LINKS */
+.datetime-aside li{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* TITLE TOP VIEWS ASIDE-BAR STYLES */
+
+.aside-bar .large-fonts{
+    font-size: 2rem;
+}
+
+/* LINK STYLES */
+
+.datetime-aside a{
+    text-decoration: none;
+    color: var(--aside-datetime-colors);
+}
+
+/* HOVER LINK EFFECT */
+.datetime-aside a:hover{
+    transition: 0.2s all;
+    color: white;
+}
+
+/* END TITLE SECTION, START CARD-SECTION ASIDE */
+
+.cards-aside{
+    width: 100%;
+}
+
+/* USING AGAIN CARDS OF TRENDING NOW, BUT THIS TIME CARD HAVE A 100% OF THE CONTAINER, IN THIS CASE 30% OF SPACE ASIDE, RESET PADDING FOR SPACE */
+.aside-bar .card{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* CHANGING CARD-IMG FIGURE TAG CONTAINER HEIGHT */
+.aside-bar .card-img{
+    height: 18rem;
+}
+
+/* ADJUST IMG WIDTH OBJECT FIT */
+.aside-bar .card-img img{
+    object-fit:100%;
+    object-position: center 70%;
+}
+
+/* USING RGBA FOR EFFECT BACKGROUND AND PSEUDO AFTER */
+/* IMPORTANT (FOR ME), USE--> .CARDS-ASIDE CLASS FOR DON'T APPLY THE LINEAR GRADIENT TO ALL ASIDE IMGS, JUST ON THE TOP VIEWS SECTION AND NO!! APPLY ON NEW COMMENT SECTION, I WRITE AGAIN THIS FOR THAT PROBLEM */
+.aside-bar .cards-aside .card-img::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to top, rgba(0,0,0,0.7) 5% , transparent) ;
+    position: absolute;  
+}
+
+/* HOVER EFFECT ON ASIDE IMG CARD LESS RGBA FOR BRIGTHNESS WHEN HOVER */
+ .cards-aside .card:hover .card-img::before{
+    background-image: linear-gradient( to top, rgba(0,0,0,0.4) 5% , transparent);
+}
+
+/* MOVING VIEWS TO RIGHT TOP */
+.cards-aside .views{
+   top: 0.8rem;
+   right: 0.8rem;
+}
+
+/* SET THE TITLE-CARD ON ABSOLUTE FOR SET ON IMG-CARD */
+
+.cards-aside .card .card-title{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+
+/* LINK TITLE CARD COLOR */
+.cards-aside .card-title a{
+    color: white;
+}
+
+/* MEDIA QUERIES ASIDE  924px*/
+
+@media screen and (max-width:924px)
+{   
+    /* i think this view its good for aside bar before footer */
+    .aside-bar{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+/* MEDIA QUERIES 440PX */
+
+@media screen and (max-width:440px)
+{   
+    /* now aside bar take 100% of the container, looks cute! */
+    .aside-bar{
+        width: 100%;
+    }
+}

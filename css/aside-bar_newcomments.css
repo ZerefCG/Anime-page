@@ -1,0 +1,63 @@
+/* FOR SPACE OF TOP VIEWS SECTION*/
+.aside-bar .new-comments{
+    margin-top: 8rem;
+    color: white;
+}
+
+/* NEW-COMMENTS CARDS DISPLAYING FLEX FOR SYDE BY SIDE ELEMENTS */
+.new-comments-cards .card{
+    display: flex;
+   
+}
+
+/* NOW ON DISPLAY FLEX ON DESCRIPTION CARD RIGHT SIDE */
+
+.new-comments-cards .card .description-card-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    line-height: 2rem; /*FOR A BIT SPACE ON TEXT ITEMS*/
+}
+
+/* DELETING PADDING OF VIEWES COMPONENT, POSITION ABSOLUTE DELETE, BACKGROUND UNSET, CHANGING COLOR  */
+
+.new-comments .description-card-comment .views{
+    padding: 0;
+    background-color: unset;
+    position: unset;
+    color: var(--aside-datetime-colors);
+}
+
+
+/* ASIDE IMG WIDTH AND HEIGHT*/
+.new-comments-cards .card-img{
+    min-width: 30%;
+    max-width: 30%;
+    height: 15rem;
+}
+
+
+/* MEDIA QUERIES */
+
+/* FOR 924PX */
+
+@media screen and (max-width:924px)
+{   
+    /* MORE WITDH AND HEIGHT */
+
+    .new-comments-cards .card-img{
+        min-width: 50%;
+        max-width: 50%;
+        height: 30rem;
+    }
+
+}
+
+/* FOR 440PX */
+@media screen and (max-width:440px)
+{
+    .new-comments-cards .card .description-card-comment{
+        text-align: left;
+    } 
+}
